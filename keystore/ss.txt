@@ -1,0 +1,31 @@
+天天传奇  com.tencent.alpha
+游龙英雄  com.tencent.tmgp.youlong
+仙剑奇侠传 com.tencent.xjcard
+全民主公 com.tencent.tmgp.zgtz
+勇者大冒险 com.tencent.tmgp.mxm
+我叫MT2 com.tencent.tmgp.mt2
+
+
+
+星河战神  com.tencent.xhzs
+三国笑传 com.tencent.tmgp.herosiega
+掌上骑士联盟  com.tencent.tmgp.qqs
+放开那部落     com.tencent.tmgp.wowlegend
+全民水浒  com.tencent.Q108
+潮爆三国  com.tencent.tmgp.CX
+龙界启示录 com.tencent.tmgp.cwxxb
+大闹三国  com.tencent.tmgp.ttzz
+
+神魔之塔  com.tencent.tmgp.madhead.tos
+英雄杀 com.qqgame.mic
+全民英雄 com.tencent.hero
+天天魔斗士com.tencent.wemonster
+进击的女神 com.tencent.begonia.mi
+横扫西游 com.tencent.tmgp.hsxy
+三国之刃com.tencent.tmgp.sgzr
+天天来战com.tencent.tmgp.ttlz
+复仇者联盟com.tencent.agame
+推翻那部落com.tencent.tmgp.MiniEmpire
+新部落守卫战com.tencent.nmrq
+城堡争霸com.tencent.castleclash
+

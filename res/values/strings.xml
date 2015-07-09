@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="game_name">腾讯游戏</string>
+    <string name="open">打开</string>
+    <string name="hint">温馨提示</string>
+    <string name="message">该游戏未安装或者不是腾讯的游戏，是否前往应用宝下载</string>
+    <string name="lack">你的金币数量不够，请通过免费获取金币来升级</string>
+    <string name="upgrade">升级需要消耗你100金币，是否继续？</string>
+    <string name="ensure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="app_name">天天爱钻石</string>
+    <string name="game_tip">腾讯游戏</string>
+    <string name="open_name">请选择游戏</string>
+    <string name="close_name">天天爱钻石</string>
+    <string name="present_integral">当前积分:%1$d</string>
+    <string name="share_integral">免费去升级</string>
+    <string name="contacts">联系我们</string>
+    <string name="share_title_tip">做任务，赚积分，领钻石</string>
+    <string name="wall_integral">升级领钻石</string>
+    <string name="inputqq">请输入你的QQ号码</string>
+    <string name="remain_integral">当前为免费用户，还差%1$d分成为会员</string>
+    <string name="receive">领取钻石</string>
+    <string name="tencen">QQ</string>
+    <string name="wechatmom">朋友圈</string>
+    <string name="wechats">微信</string>
+    <string name="qzones">QQ空间</string>
+    <string name="toast_warning">该游戏未安装</string>
+    <string name="rank">等级:%1$s</string>
+    <string name="roll_text">恭喜%1$s***%2$s领取了%3$s颗钻石</string>
+    <string name="explain">使用说明</string>
+    <string name="tip_title">等级说明</string>
+    <string name="acquire">领取钻石</string>
+    <string name="before">当前积分:%1$s</string>
+    <string name="gold_tip">当前拥有的金币:%1$s</string>
+    <string name="share_tip">任务还没有完成</string>
+    <string name="tip">恭喜</string>
+    <string name="integral">当前积分:%1$s</string>
+    <string name="share_text">拥有10积分，就能免费升级领钻石\n分享QQ4次，得4分\n分享空间1次,得1分\n分享微信4次,得4分\n分享朋友圈1次,得1分</string>
+    <string name="free">永久免费</string>
+    <string name="tip_text2">VIP1用户（每天可领取所有手游1000钻石）</string>
+    <string name="tip_text3">VIP2用户（每天可领取所有手游2000钻石）</string>
+    <string name="tip_text4">VIP3用户（每天可领取所有手游3000钻石）</string>
+    <string name="splashactivity_update_prompt">版本更新</string>
+    <string name="tip_text1">免费用户无法领取钻石\nVIP1每天可以领取1000个钻石\nVIP2每天可以领取2000个钻石\nVIP3每天可以领取3000个钻石\n</string>
+    <string name="share_number">%1$s:%2$s</string>
+    <string name="upgrade_text">你可以在这里直接升级到VIP,Vip1每天可以领取1000个钻石,Vip2每天可以领取2000个钻石,Vip3每天可以领取5000个钻石\n[每次升级需要消耗50个金币]</string>
+
+</resources>

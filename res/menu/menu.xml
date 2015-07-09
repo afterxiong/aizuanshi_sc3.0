@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_webSearch"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/action_search"
+        android:title="webSearch"/>
+    
+    
+    <item
+        android:id="@+id/back"
+        android:showAsAction="ifRoom|withText"
+        android:icon="@drawable/back"
+        android:title="webSearch"/>
+
+</menu>

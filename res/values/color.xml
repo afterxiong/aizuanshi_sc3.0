@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="install">#2198a2 </color>
+    <color name="not_install">#FFFFFF</color>
+    <color name="bg">#8DB6CD</color>
+
+</resources>

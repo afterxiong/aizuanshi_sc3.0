@@ -1,0 +1,201 @@
+
+
+create table game
+(
+ _id integer  primary key autoincrement,  
+ indexs integer,
+ name text,  
+ package text,
+ exist boolean 
+)
+
+drop table game
+drop table share
+select * from game
+select * from users
+
+
+
+
+
+create table game(
+       _id integer primary key autoincrement,
+       name text,  
+       package text,
+       exist integer           
+)
+create table share(
+       _id integer,
+       g_id integer references game(_id),       
+       qq integer,       
+       qzones integer,       
+       wechats integer,
+       wechatmom integer
+)
+
+update share set qq='0',qzones='0',wechats='0',wechatmom='0'
+select * from game
+select * from share
+select package,_id from game where name='全民主公'
+
+
+update share set qq='0',qzones='0',wechats='0',wechatmom='0' where g_id='16'
+
+update game set exist='1' where _id='2'
+update game set exist='0' where _id='2'
+
+insert into share values('0','0','0','0','0','0');
+insert into share values('0','1','0','0','0','0');
+insert into share values('0','2','0','0','0','0');
+insert into share values('0','3','0','0','0','0');
+insert into share values('0','4','0','0','0','0');
+insert into share values('0','5','0','0','0','0');
+insert into share values('0','6','0','0','0','0');
+insert into share values('0','7','0','0','0','0');
+insert into share values('0','8','0','0','0','0');
+insert into share values('0','9','0','0','0','0');
+insert into share values('0','10','0','0','0','0');
+insert into share values('0','11','0','0','0','0');
+insert into share values('0','12','0','0','0','0');
+insert into share values('0','13','0','0','0','0');
+insert into share values('0','14','0','0','0','0');
+insert into share values('0','15','0','0','0','0');
+insert into share values('0','16','0','0','0','0');
+
+
+insert into share values('0','17','0','0','0','0');
+insert into share values('0','18','0','0','0','0');
+insert into share values('0','19','0','0','0','0');
+insert into share values('0','20','0','0','0','0');
+insert into share values('0','21','0','0','0','0');
+insert into share values('0','22','0','0','0','0');
+
+insert into share values('0','23','0','0','0','0');
+insert into share values('0','24','0','0','0','0');
+insert into share values('0','25','0','0','0','0');
+insert into share values('0','26','0','0','0','0');
+insert into share values('0','27','0','0','0','0');
+insert into share values('0','28','0','0','0','0');
+insert into share values('0','29','0','0','0','0');
+insert into share values('0','30','0','0','0','0');
+insert into share values('0','31','0','0','0','0');
+insert into share values('0','32','0','0','0','0');
+insert into share values('0','33','0','0','0','0');
+insert into share values('0','34','0','0','0','0');
+
+insert into share values('0','35','0','0','0','0');
+insert into share values('0','36','0','0','0','0');
+insert into share values('0','37','0','0','0','0');
+insert into share values('0','38','0','0','0','0');
+insert into share values('0','39','0','0','0','0');
+insert into share values('0','40','0','0','0','0');
+insert into share values('0','41','0','0','0','0');
+insert into share values('0','42','0','0','0','0');
+
+
+select a.[_id],a.[name],a.[package],a.[exist],b.[qq],b.[qzones],b.[wechats],b.[wechatmom] from game as a,share as b where a.[_id]=b.[g_id] 
+
+
+select exist from game where _id='1'
+select g_id, qq ,qzones ,wechats ,wechatmom  from share where g_id='0'
+
+update game set exist='1' where _id='0'
+update share set qq='2' where g_id='0'
+
+
+
+  
+ 
+ 
+ 
+ 
+ insert into game values('17','天天传奇','com.tencent.alpha','0');    
+ insert into game values('18','游龙英雄','com.tencent.tmgp.youlong','0'); 
+ insert into game values('19','仙剑奇侠传','com.tencent.xjcard','0'); 
+ insert into game values('20','全民主公','com.tencent.tmgp.zgtz','0'); 
+ insert into game values('21','勇者大冒险','com.tencent.tmgp.mxm','0'); 
+ insert into game values('22','我叫MT2','com.tencent.tmgp.mt2','0');  
+
+
+
+
+
+
+  
+insert into game values('23','星河战神','com.tencent.xhzs','0');
+ 
+insert into game values('24','三国笑传','com.tencent.tmgp.herosiega','0');
+  
+insert into game values('25','掌上骑士联盟','com.tencent.tmgp.qqs','0');
+     
+insert into game values('26','放开那部落','com.tencent.tmgp.wowlegend','0');
+  
+insert into game values('27','全民水浒','com.tencent.Q108','0');
+
+insert into game values('28','龙界启示录','com.tencent.tmgp.cwxxb','0');
+  
+insert into game values('29','大闹三国','com.tencent.tmgp.ttzz','0');
+
+  
+insert into game values('30','神魔之塔','com.tencent.tmgp.madhead.tos','0');
+ 
+insert into game values('31','英雄杀','com.qqgame.mic','0');
+ 
+insert into game values('32','全民英雄','com.tencent.hero','0');
+
+
+ 
+insert into game values('33','进击的女神','com.tencent.begonia.mi','0');
+ 
+insert into game values('34','横扫西游','com.tencent.tmgp.hsxy','0');
+
+insert into game values('35','三国之刃','com.tencent.tmgp.sgzr','0');
+
+insert into game values('36','天天来战','com.tencent.tmgp.ttlz','0');
+
+insert into game values('37','复仇者联盟','com.tencent.agame','0');
+
+insert into game values('38','推翻那部落','com.tencent.tmgp.MiniEmpire','0');
+
+insert into game values('39','新部落守卫战','com.tencent.nmrq','0');
+
+insert into game values('40','城堡争霸','com.tencent.castleclash','0');
+ 
+ 
+insert into game values('41','潮爆三国','com.tencent.tmgp.CX','0');
+
+insert into game values('42','天天魔斗士','com.tencent.wemonster','0');
+
+
+
+
+
+
+
+
+
+
+
+                           
+    insert into game values('0','欢乐斗牛','com.qqgame.hldouniu','0');
+		insert into game values('1','欢乐西游','com.tencent.west','0');
+		insert into game values('2','节奏大师','com.tencent.game.rhythmmaster','0');
+		insert into game values('3','雷霆战机','com.tencent.clover','0');
+		insert into game values('4','全民闯天下','com.tencent.tmgp.qjctx','0');
+
+
+		insert into game values('5','全民飞机大战','com.tencent.feiji','0');
+		insert into game values('6','全民风之旅','com.tencent.Alice','0');
+		insert into game values('7','全民破坏神','com.tencent.tmgp.lordofdark','0');
+		insert into game values('8','全民突击','com.tencent.WeFire','0');
+		insert into game values('9','天天爱消除','com.tencent.pengg','0');
+		insert into game values('10','天天德州','com.tencent.qqgame.qqTexaswvga','0');
+		insert into game values('11','天天飞车','com.tencent.game.SSGame','0');
+		insert into game values('12','天天富翁','com.tencent.modoomarble','0');
+		insert into game values('13','天天酷跑','com.tencent.pao','0');
+		insert into game values('14','天天来塔防','com.tencent.tmgp.vdefense','0');
+		insert into game values('15','天天星连萌','com.tencent.lian','0');
+		insert into game values('16','天天炫斗','com.tencent.game.VXDGame','0');
+
+update  game set exist='1'  where _id='1'
+

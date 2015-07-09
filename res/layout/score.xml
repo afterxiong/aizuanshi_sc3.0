@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/gold"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/acquire_bg"
+                android:text="@string/gold_tip"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#50000000" />
+
+            <TextView
+                android:id="@+id/dianle"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="1px"
+                android:drawableLeft="@drawable/gold"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="小乐通道"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#50000000" />
+
+            <TextView
+                android:id="@+id/pass2"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="1px"
+                android:drawableLeft="@drawable/gold"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="有米通道"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#50000000" />
+
+            <TextView
+                android:id="@+id/pass3"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:layout_marginTop="1px"
+                android:drawableLeft="@drawable/gold"
+                android:drawablePadding="20dp"
+                android:gravity="center_vertical"
+                android:text="趣米通道"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="#50000000" />
+
+            <Button
+                android:id="@+id/pass5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp"
+                android:background="@drawable/acquire_bg"
+                android:padding="10dp"
+                android:text="升级VIP" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

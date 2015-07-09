@@ -1,0 +1,7 @@
+天天传奇  com.tencent.alpha
+游龙英雄  com.tencent.tmgp.youlong
+仙剑奇侠传 com.tencent.xjcard
+全民主公 com.tencent.tmgp.zgtz
+勇者大冒险 com.tencent.tmgp.mxm
+我叫MT2 com.tencent.tmgp.mt2
+
