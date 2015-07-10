@@ -9,6 +9,7 @@
     <string name="message">该游戏未安装或者不是腾讯的游戏，是否前往应用宝下载</string>
     <string name="lack">你的金币数量不够，请通过免费获取金币来升级</string>
     <string name="upgrade">升级需要消耗你100金币，是否继续？</string>
+    <string name="upgrade1">每次升级需要消耗100金币</string>
     <string name="ensure">确定</string>
     <string name="cancel">取消</string>
     <string name="app_name">天天爱钻石</string>

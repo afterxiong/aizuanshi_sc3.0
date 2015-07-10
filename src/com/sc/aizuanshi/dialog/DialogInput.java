@@ -68,7 +68,7 @@ public class DialogInput extends Dialog implements android.view.View.OnClickList
 			final AlertDialog.Builder dialog = new Builder(context);
 			dialog.setTitle(context.getResources().getString(R.string.hint));
 			String rankTextTip = Parameters.rankId[Config.getSingle(context).getrRank()];
-			dialog.setMessage("因腾讯限制，当前" + rankTextTip + "无法领取，请升级更高级别会员来领取钻石");
+			dialog.setMessage("因腾讯限制，当前" + rankTextTip + "无法领取，请升级更高级别会员来领取钻石，VIP2和VIP3没有限制！");
 			dialog.setNegativeButton(context.getResources().getString(R.string.wall_integral),
 					new DialogInterface.OnClickListener() {
 
