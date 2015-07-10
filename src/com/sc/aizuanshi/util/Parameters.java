@@ -3,14 +3,24 @@ package com.sc.aizuanshi.util;
 import com.sc.aizuanshi.R;
 
 public class Parameters {
+	/*微信*/
 	public static String WEIXIN_APP_ID = "wx3d95658fc25548c9";
 	public static String WEIXIN_APP_SECRET = "44b03c4a925a82be18641d5152bf997f";
-	public static String DIAN_LE="abc0f321f08b11589af99852dafb5d81";
+	/*QQ*/
 	public static String QQ_APP_ID = "1104617409";
+	/*有米*/
 	public static String YOU_MI_ID = "de56116dfa751b45";
 	public static String YOU_MI_KEY = "d3bb2f483c6d2712";
+	/*趣米*/
 	public static String QU_MI_APP_ID = "1b9af27d47a97188";
 	public static String QU_MI_KEY = "718b30b85df13cc9";
+	/*聚优*/
+	public static String JU_YOU = "1a679c9757b27a192d21dce5507319ef";
+	/*米迪*/
+	public static String MI_DI_ID = "22292";
+	public static String MI_DI_KEY = "r0qsiqu5gz1t2ryx";
+	
+	
 	public static String UPDATE_URL = "http://bbb.slipperabc.cn/";
 	public static String UPDATE_URL_TEXT = "http://172.168.11.110:8080/update.html";
 	public static String YI_JI_FEN = "EMMN5WKEHSNL4H76AUCA6CQH6CXESM3VTJ";

@@ -38,7 +38,7 @@
                 android:background="#50000000" />
 
             <TextView
-                android:id="@+id/dianle"
+                android:id="@+id/qumi"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
@@ -46,7 +46,7 @@
                 android:drawableLeft="@drawable/gold"
                 android:drawablePadding="20dp"
                 android:gravity="center_vertical"
-                android:text="小乐通道"
+                android:text="趣米通道"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
@@ -56,7 +56,7 @@
                 android:background="#50000000" />
 
             <TextView
-                android:id="@+id/pass2"
+                android:id="@+id/midi"
                 android:layout_width="fill_parent"
                 android:layout_height="50dp"
                 android:layout_margin="10dp"
@@ -64,7 +64,7 @@
                 android:drawableLeft="@drawable/gold"
                 android:drawablePadding="20dp"
                 android:gravity="center_vertical"
-                android:text="有米通道"
+                android:text="米迪通道"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
@@ -82,7 +82,7 @@
                 android:drawableLeft="@drawable/gold"
                 android:drawablePadding="20dp"
                 android:gravity="center_vertical"
-                android:text="趣米通道"
+                android:text="有米通道"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 

@@ -1,9 +1,11 @@
 package com.sc.aizuanshi.fragment;
 
+import net.midi.wall.sdk.AdWall;
+import net.midi.wall.sdk.IAdWallGetPointsNotifier;
+import net.midi.wall.sdk.IAdWallShowAppsNotifier;
 import net.slidingmenu.tools.os.OffersManager;
 import net.slidingmenu.tools.os.PointsManager;
 import net.slidingmenu.tools.video.VideoAdManager;
-import net.slidingmenu.tools.video.listener.VideoAdListener;
 import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.app.Fragment;
@@ -20,10 +22,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.dlnetwork.DevInit;
-import com.dlnetwork.GetTotalMoneyListener;
-import com.dlnetwork.GiveMoneyListener;
-import com.dlnetwork.SpendMoneyListener;
 import com.newqm.sdkoffer.QuMiConnect;
 import com.newqm.sdkoffer.QuMiNotifier;
 import com.sc.aizuanshi.R;
@@ -56,14 +54,14 @@ public class FragmentScore extends Fragment implements OnClickListener {
 
 	public void initView(View view) {
 		gold = (TextView) view.findViewById(R.id.gold);
-		TextView pass2 = (TextView) view.findViewById(R.id.pass2);
+		TextView qumi = (TextView) view.findViewById(R.id.qumi);
 		TextView pass3 = (TextView) view.findViewById(R.id.pass3);
 		TextView pass5 = (TextView) view.findViewById(R.id.pass5);
-		TextView dianle = (TextView) view.findViewById(R.id.dianle);
-		pass2.setOnClickListener(this);
+		TextView midi = (TextView) view.findViewById(R.id.midi);
+		qumi.setOnClickListener(this);
 		pass3.setOnClickListener(this);
 		pass5.setOnClickListener(this);
-		dianle.setOnClickListener(this);
+		midi.setOnClickListener(this);
 	}
 
 	public void initDate() {
@@ -86,13 +84,7 @@ public class FragmentScore extends Fragment implements OnClickListener {
 
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.dianle:
-			DevInit.showOffers(getActivity());
-			break;
-		case R.id.pass2:
-			OffersManager.getInstance(getActivity()).showOffersWall();
-			break;
-		case R.id.pass3:
+		case R.id.qumi:
 			QuMiConnect.getQumiConnectInstance(getActivity()).initOfferAd(getActivity());
 			QuMiConnect.getQumiConnectInstance().showOffers(new QuMiNotifier() {
 
@@ -108,6 +100,21 @@ public class FragmentScore extends Fragment implements OnClickListener {
 
 				}
 			});
+			break;
+		case R.id.midi:
+			AdWall.showAppOffers(new IAdWallShowAppsNotifier() {
+
+				public void onShowApps() {
+					System.out.println("米迪广告开启");
+				}
+
+				public void onDismissApps() {
+					System.out.println("米迪广告关闭");
+				}
+			});
+			break;
+		case R.id.pass3:
+			OffersManager.getInstance(getActivity()).showOffersWall();
 			break;
 		case R.id.pass5:
 			promotes();
@@ -139,7 +146,7 @@ public class FragmentScore extends Fragment implements OnClickListener {
 							Toast.makeText(getActivity(), "升级成功...", Toast.LENGTH_SHORT).show();
 							dialog.dismiss();
 							sendBroadRefurbish();
-							number = number - 100;
+							number = number - 100 * config.getrRank();
 						}
 					});
 			dialog.setPositiveButton(getActivity().getResources().getString(R.string.cancel),
@@ -164,22 +171,25 @@ public class FragmentScore extends Fragment implements OnClickListener {
 		dialog.show();
 	}
 
-	int amount_nums = 0;
+	int midi_numer = 0;
 
 	public int amount() {
 
 		int pointsBalance = PointsManager.getInstance(getActivity()).queryPoints();
-		DevInit.getTotalMoney(getActivity(), new GetTotalMoneyListener() {
+		return pointsBalance + qumiNumber + midi_numer - number;
+	}
 
-			public void getTotalMoneySuccessed(String arg0, long amounts) {
-				amount_nums = (int) amounts;
+	public void midiAmount() {
+		AdWall.getPoints(new IAdWallGetPointsNotifier() {
+
+			public void onReceivePoints(String arg0, Integer arg1) {
+				midi_numer = arg1;
 			}
 
-			public void getTotalMoneyFailed(String arg0) {
+			public void onFailReceivePoints() {
 
 			}
 		});
-		return pointsBalance + qumiNumber + amount_nums - number;
 	}
 
 	public void onDestroy() {

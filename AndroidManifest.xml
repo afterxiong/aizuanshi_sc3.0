@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sc.aizuanshi"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="3"
+    android:versionName="3.0" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -111,18 +111,25 @@
         <activity
             android:name="com.newqm.sdkoffer.QuMiActivity"
             android:configChanges="keyboardHidden|orientation" />
+      <!-- 聚优桌面快捷广告////////////////////////////////////////////////////////////////////////////////// -->
 
-        <!-- 点乐////////////////////////////////////////////////////////////////////////////////// -->
         <activity
-            android:name="com.dlnetwork.DevNativeActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+            android:name="com.quick.QActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=".jfcuttask" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT" />
 
-        <service android:name="com.dlnetwork.DevNativeService" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
-        <meta-data
-            android:name="com.dlnetwork.cid"
-            android:value="default" />
+        <service android:name="com.quick.QService" />
+        
+        <!-- 米迪 -->
+         <!-- 显示应用列表和详细信息(必须) -->
+        <activity android:name="com.sc.aizuanshi.UserActivity" android:configChanges="keyboardHidden|orientation" />    
     </application>
 
 </manifest>
