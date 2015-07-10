@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.sc.aizuanshi.R;
+import com.sc.aizuanshi.util.Config;
 import com.sc.aizuanshi.util.Game;
 import com.sc.aizuanshi.util.GameAdapter;
 
@@ -63,19 +64,29 @@ public class DialogGameList extends Dialog {
 				Game game = list.get(position);
 				if (game.getExist() == 1) {
 					DialogGameList.this.dismiss();
-					final AlertDialog.Builder dialog = new Builder(context);
-					dialog.setTitle(context.getResources().getString(R.string.hint));
-					dialog.setMessage(context.getString(R.string.tip_text1));
-					dialog.setNegativeButton(context.getResources().getString(R.string.share_integral),
-							new DialogInterface.OnClickListener() {
+					
+					if (Config.getSingle(context).getrRank() < 1) {
+						
+						final AlertDialog.Builder dialog = new Builder(context);
+						dialog.setTitle(context.getResources().getString(R.string.hint));
+						dialog.setMessage(context.getString(R.string.tip_text1));
+						dialog.setNegativeButton(context.getResources().getString(R.string.share_integral),
+								new DialogInterface.OnClickListener() {
 
-								public void onClick(DialogInterface dialog, int which) {
-									Dialog sharedialog = new DialogShare(context, R.style.Theme_dialog);
-									sharedialog.setCancelable(false);
-									sharedialog.show();
-								}
-							});
-					dialog.show();
+									public void onClick(DialogInterface dialog, int which) {
+										Dialog sharedialog = new DialogShare(context, R.style.Theme_dialog);
+										sharedialog.setCancelable(false);
+										sharedialog.show();
+									}
+								});
+						dialog.show();
+					} else {
+						DialogInput dialogInput = new DialogInput(context, R.style.processDialog);
+						dialogInput.setCancelable(false);
+						dialogInput.show();
+					}
+					
+					
 				} else {
 					View layout = LayoutInflater.from(context).inflate(R.layout.toast, null);
 					TextView textarning = (TextView) layout.findViewById(R.id.warning);

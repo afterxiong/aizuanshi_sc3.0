@@ -139,7 +139,7 @@ public class FragmentScore extends Fragment implements OnClickListener {
 					new DialogInterface.OnClickListener() {
 
 						public void onClick(DialogInterface dialog, int which) {
-							PointsManager.getInstance(getActivity()).spendPoints(100);
+							PointsManager.getInstance(getActivity()).spendPoints(1000);
 							int len = config.getrRank() >= Parameters.rankId.length - 1 ? Parameters.rankId.length - 1
 									: config.getrRank() + 1;
 							config.setRank(len);

@@ -83,15 +83,10 @@ public class FragmentMain extends Fragment {
 
 	public void tipDialog() {
 
-		if (config.getrRank() < 1) {
-			DialogGameList dialogGameList = new DialogGameList(getActivity(), R.style.Game_dialog, listGame);
-			dialogGameList.setCancelable(false);
-			dialogGameList.show();
-		} else {
-			DialogInput dialogInput = new DialogInput(getActivity(), R.style.processDialog);
-			dialogInput.setCancelable(false);
-			dialogInput.show();
-		}
+		DialogGameList dialogGameList = new DialogGameList(getActivity(), R.style.Game_dialog, listGame);
+		dialogGameList.setCancelable(false);
+		dialogGameList.show();
+		
 	}
 
 }
