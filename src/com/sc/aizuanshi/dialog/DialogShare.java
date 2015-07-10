@@ -148,15 +148,19 @@ public class DialogShare extends Dialog implements OnClickListener {
 		switch (v.getId()) {
 		case R.id.qq:
 			shareQQ();
+			Toast.makeText(context, "分享中，请稍等。。。", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.qzone:
 			shareQzones();
+			Toast.makeText(context, "分享中，请稍等。。。", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.wechat:
 			shareWechats();
+			Toast.makeText(context, "分享中，请稍等。。。", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.wechatmomen:
 			shareWechatmom();
+			Toast.makeText(context, "分享中，请稍等。。。", Toast.LENGTH_SHORT).show();
 			break;
 		case R.id.dialog_cancel:
 			this.dismiss();

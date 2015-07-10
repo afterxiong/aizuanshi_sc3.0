@@ -16,7 +16,6 @@ import com.sc.aizuanshi.MainActivity;
 import com.sc.aizuanshi.MainActivity.OnDataListener;
 import com.sc.aizuanshi.R;
 import com.sc.aizuanshi.dialog.DialogGameList;
-import com.sc.aizuanshi.dialog.DialogInput;
 import com.sc.aizuanshi.util.Config;
 import com.sc.aizuanshi.util.Game;
 import com.sc.aizuanshi.util.Parameters;
