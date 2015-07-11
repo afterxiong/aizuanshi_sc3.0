@@ -204,7 +204,7 @@ public class DialogShare extends Dialog implements OnClickListener {
 			return;
 		}
 		WXWebpageObject webpage = new WXWebpageObject();
-		webpage.webpageUrl = title;
+		webpage.webpageUrl = target_url;
 		WXMediaMessage msg = new WXMediaMessage(webpage);
 		msg.title = title;
 		msg.description = summary;
@@ -223,7 +223,7 @@ public class DialogShare extends Dialog implements OnClickListener {
 			return;
 		}
 		WXWebpageObject webpage = new WXWebpageObject();
-		webpage.webpageUrl = title;
+		webpage.webpageUrl = target_url;
 		WXMediaMessage msg = new WXMediaMessage(webpage);
 		msg.title = title;
 		msg.description = summary;
